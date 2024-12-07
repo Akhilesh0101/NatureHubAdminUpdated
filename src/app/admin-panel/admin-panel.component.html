@@ -1,0 +1,76 @@
+
+<div class="container  ">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  p-3 ">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <div class="ml-auto">
+      <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="adminProfile" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle"></i> Admin Profile
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="adminProfile">
+          <li><a class="dropdown-item" href="/admin-profile">View Profile</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards -->
+  <div class="row ">
+    <!-- Total Product -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Total Product</h5>
+          <p class="card-text display-4">{{ totalProduct }}</p>
+          <a class="btn btn-primary" href="/admin-product">Product</a>        
+      </div>
+    </div>
+    </div>
+
+    <!-- Total Remedies -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Total Remedies</h5>
+          <p class="card-text display-4">{{ totalRemedies }}</p>
+          <a class="btn btn-success" href="/admin-remedies">Remedies</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Health Tips -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Total Health Tips</h5>
+          <p class="card-text display-4">{{ totalHealthTips }}</p>
+          <a class="btn btn-success" href="/admin-health-tips">healthTips</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total User -->
+    <div class="col-md-4 mt-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Total User</h5>
+          <p class="card-text display-4">{{ totalUsers }}</p>
+          <a class="btn btn-success" href="/admin-user-details">User Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Admin -->
+    <div class="col-md-4 mt-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Total Admin</h5>
+          <p class="card-text display-4">{{ totalAdmins }}</p>
+          <a class="btn btn-success" href="/admin-management">Create Admin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
